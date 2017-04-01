@@ -14,4 +14,18 @@ total_notas = 0
 for nota in notas_clases:
 	total_notas += nota
 
-print("Su promedio es: %d" % (total_notas / contador))
+promedio = (total_notas / contador)
+
+print("Su promedio es: %d" % promedio )
+
+if promedio < 60:
+	print("Usted esta aplazado")
+	if promedio == 1:
+		print("excelente")
+elif promedio >= 70 and promedio <=80:
+	print("Muy bien")
+elif promedio >= 90:
+	print("Excelente")
+
+ 
+
